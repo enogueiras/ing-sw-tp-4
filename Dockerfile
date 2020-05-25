@@ -1,4 +1,4 @@
-FROM ubuntu
+FROM circleci/openjdk
 RUN apt-get update && apt-get install -y sudo wget apt-transport-https ca-certificates curl gnupg2 software-properties-common tar git openssl gzip unzip zip
 # Standard Encoding von ASCII auf UTF-8 stellen
 ENV LANG C.UTF-8
