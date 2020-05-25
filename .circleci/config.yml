@@ -41,7 +41,7 @@ jobs:
       # run tests!
       - run: gradle test
 
-- run: 
+      - run: 
           name: "Build and Publish Release on GitHub"
           command: |
             NOW="$(date)" 
@@ -58,5 +58,4 @@ workflows:
       - build:
           filters:
             branches:
-              only: master 
-      
+              only: master      
